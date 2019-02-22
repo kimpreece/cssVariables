@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- add a favicon -->
+    <link rel="shortcut icon" href="NF.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <title>CSS Variables Modules</title>
+</head>
+
+<body>
+
+    <h1>CSS Variables -> Custom Properties </h1>
+    <p>CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a
+        document.</p>
+
+
+    <h2>Syntax to declare a variable:</h2>
+    <ul>
+        <li>begin with -- (maybe a nod to BEM)</li>
+        <li>is case sensitive</li>
+        <li>(e.g., --main-backgroundcolor: #1F2833;)</li>
+        <li>(e.g., --main-textColor: #66FCF1;)</li>
+    </ul>
+    <h2>Syntax to use a variables</h2>
+    <ul>
+        <li>property: var(--name);</li>
+        <li>example => background-color: var(--main-backgroundcolor)</li>
+        <li>another example => color: var(--main-textColor);</li>
+    </ul>
+
+    <h2>Example</h2>
+    <figure style ="background-color: cadetblue">
+        main.css
+        <pre>
+        <code>
+
+:root {
+    --main-backgroundColor: #1F2833;
+    --main-textColor: #66FCF1;
+}
+
+h1 {
+    background-color: var(--main-backgroundColor);
+    color: var(--main-textColor, white);
+}
+        </code>
+        </pre>
+    </figure>
+
+    root: root element of the page - similiar to html element but higher specificity and becomes global property
+
+    <h3>Links to color palettes:</h3>
+    <ul>
+        <li><a href="https://visme.co/blog/website-color-schemes/">Color Schemes</a></li>
+
+        <li><a href="https://hookagency.com/website-color-schemes/">Even more color palettes</a></li>
+
+    </ul>
+
+    <h3>Button examples from chapter</h3>
+
+    <button class="btn">Submit</button>
+    <button class="btn btn--orange">Submit</button>
+    <button class="btn btn--blue">Submit</button>
+    <button class="btn btn--yellow">Submit</button>
+    <button class="btn btn--big">Submit</button>
+    <button class="btn btn--small">Submit</button>
+    <button class="btn btn__prompt">Submit</button>
+
+
+</body>
+
+</html>

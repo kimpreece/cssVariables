@@ -1,0 +1,18 @@
+@import 'buttons.css';
+@import 'cards.css';
+
+
+
+body {
+  font-family: "Lato", "Helvetica", "sans-serif";
+  margin: 0;
+  font-size: 3em;
+}
+
+.transparent {
+  display: none;
+}
+
+.field {
+  margin: 20px 0 0 0;
+}

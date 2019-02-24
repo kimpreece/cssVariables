@@ -38,6 +38,7 @@ h1 {
 }
 
 ````
+The sample code added the variables to the :root pseudo-class, which makes its value available globally and can be used for anything inside the <html> element. 
 
 ## Add a favicon, tab icon, URL, etc to a webpage or bookmark
 
@@ -48,10 +49,11 @@ You can add the following line of code to your head section of an html to add th
 ````
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/kimpreece/cssVariables/master/NF.ico" type="image/x-icon">
 ````
+There are many tools online that you can use to create .ico file types such as https://www.favicon-generator.org/
 
-Other image file types can be used as well for favicons such as .png, .jpg and .gif. There are many tools online that you can use to create .ico file types such as https://www.favicon-generator.org/
+Other image file types can be used as well for favicons such as .png, .jpg and .gif; just remember to change the MIME type in the code.  For example if you are using a gif format, the code would be `type="image/gif"` instead of `type="image/x-icon"`. 
 
 ## Links to color palettes
-https://visme.co/blog/website-color-schemes/
+https://visme.co/blog/website-color-schemes/. 
 
 https://hookagency.com/website-color-schemes

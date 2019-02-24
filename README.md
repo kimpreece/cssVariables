@@ -1,10 +1,8 @@
-# cssVariables, favicons, @import
+# css variables, favicons, @import
 
 
 
-## cssVariables
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+## css variables
 
 [NewForce CSS Variable chapter](https://github.com/NewForce-at-Mountwest/client-side-mastery/blob/master/book-3-the-initiate/chapters/CSS_VARIABLES.md "NewForce")
 
@@ -24,17 +22,34 @@
  + property: var(--name);</li>
  + example => background-color: var(--main-backgroundcolor)
  + another example => color: var(--main-textColor);
+ 
+ 
+````
+main.css
+        
+:root {
+    --main-backgroundColor: #1F2833;
+    --main-textColor: #66FCF1;
+}
+
+h1 {
+    background-color: var(--main-backgroundColor);
+    color: var(--main-textColor, white);
+}
+
+````
 
 ## Add a favicon, tab icon, URL, etc to a webpage or bookmark
 
-favicons are "square" images such as 16×16, 32×32, 48×48, 64×64, etc. pixel sizes after all [it's hip to be square] (https://www.youtube.com/watch?v=KqAamXcD_nQ). 
+favicons are "square" images such as 16×16, 32×32, 48×48, 64×64, etc. pixel sizes after all [it's hip to be a square](https://www.youtube.com/watch?v=KqAamXcD_nQ). 
 
+You can add the following line of code to your head section of an html to add the NewForce icon as a favicon.
 
+````
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/kimpreece/cssVariables/master/NF.ico" type="image/x-icon">
+````
 
-There are many tools online that you can use to create .ico file types.   
-
-https://www.favicon-generator.org/
+Other image file types can be used as well for favicons such as .png, .jpg and .gif. There are many tools online that you can use to create .ico file types such as https://www.favicon-generator.org/
 
 ## Links to color palettes
 https://visme.co/blog/website-color-schemes/

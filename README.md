@@ -21,7 +21,7 @@
  ### Syntax to use a variables
  + property: var(--name);</li>
  + example => background-color: var(--main-backgroundcolor)
- + another example => color: var(--main-textColor);
+ + another example => color: var(--main-textColor, white) where white is the fallback value if variable name is not defined. 
  
  
 ````
